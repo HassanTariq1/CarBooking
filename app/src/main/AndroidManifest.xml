@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inducesmile.rentacar">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="ANDROID.PERMISSION.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.inducesmile.com.itpvt.rentacar.utils.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.LoginOptionActivity" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.SignInActivity" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.SignUpActivity" />
+        <activity
+            android:name="com.inducesmile.com.itpvt.rentacar.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.CarCategoryActivity" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.CarActivity" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.RentalActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.inducesmile.com.itpvt.rentacar.DestinationActivity"
+            android:label="@string/title_activity_destination"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.inducesmile.com.itpvt.rentacar.BookingActivity"
+            android:label="@string/title_activity_booking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.inducesmile.com.itpvt.rentacar.AccountActivity"
+            android:label="@string/title_activity_account"
+            android:parentActivityName="com.inducesmile.com.itpvt.rentacar.HomeActivity" />
+        <activity
+            android:name="com.inducesmile.com.itpvt.rentacar.CheckoutActivity"
+            android:label="@string/title_activity_checkout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.FullOrderActivity" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.WebActivity" />
+        <activity
+            android:name="com.inducesmile.com.itpvt.rentacar.ProductActivity"
+            android:label="@string/title_activity_product"
+            android:parentActivityName="com.inducesmile.com.itpvt.rentacar.CarCategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.inducesmile.com.itpvt.rentacar.ForgottenActivity"></activity>
+    </application>
+
+</manifest>
